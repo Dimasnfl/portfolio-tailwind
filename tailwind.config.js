@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['index.html'],
+  darkMode: 'class',
   theme: {
     container: {
       center: true,
@@ -8,7 +9,7 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: '#0ea5e9',
+        primary: '#06b6d4',
         dark: '#0f172a',
         secondary: '#64748b',
       },
@@ -17,6 +18,6 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: ["prettier-plugin-tailwindcss"],
 }
 
