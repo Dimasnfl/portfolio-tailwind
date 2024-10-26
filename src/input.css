@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+      font-family: "Lexend", serif;
+    }
+  }
+
+    .nav-fixed {
+        @apply fixed z-[9999] bg-cyan-100 bg-opacity-10 backdrop-blur shadow-sm shadow-primary;
+    }
+    .nav-mobile-line {
+        @apply w-[30px] h-[2px] my-2 block bg-primary;
+    }
+
+    .nav-mobile-active > span:nth-child(1) {
+        @apply rotate-45;
+    }
+    .nav-mobile-active > span:nth-child(2) {
+        @apply scale-0;
+    }
+    .nav-mobile-active > span:nth-child(3) {
+        @apply -rotate-45;
+    }
